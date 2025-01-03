@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Loading -->
     <div class="loading">
@@ -17,37 +19,118 @@
     </div>
 
     <!-- Header -->
+    <!-- Header Section -->
     <header class="header">
         <nav class="navbar container">
-            <a href="#" class="logo">Portfolio</a>
-            <button class="menu-toggle-btn" aria-label="Toggle menu">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="logo.svg" alt="Logo" class="logo-image">
+                <span class="logo-text">Portfolio</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Men haqimda</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Ko'nikmalar</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Loyihalar</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Aloqa</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle-btn" aria-label="Menu">
                 <span class="hamburger"></span>
             </button>
-            <div class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="#about" class="nav-link">Men haqimda</a></li>
-                    <li><a href="#skills" class="nav-link">Ko'nikmalar</a></li>
-                    <li><a href="#projects" class="nav-link">Loyihalar</a></li>
-                    <li><a href="#contact" class="nav-link">Aloqa</a></li>
-                </ul>
-            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container">
-            <div class="hero-content fade-in">
-                <div class="hero-img">
-                    <img src="/api/placeholder/150/150" alt="Profile">
+            <div class="hero-content">
+                <!-- Left Side -->
+                <div class="hero-left">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Salom, Men
+                            <span class="highlight">Frontend</span>
+                            Dasturchiman
+                        </h1>
+                        <p class="hero-subtitle">
+                            Raqamli dunyoda kreativ yechimlar yarataman
+                        </p>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-text">Yillik tajriba</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-text">Loyihalar</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-text">Mijozlar</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Bog'lanish
+                        </a>
+                        <a href="#" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i>
+                            CV yuklab olish
+                        </a>
+                    </div>
                 </div>
-                <h1 class="hero-title">Salom, Men Frontend Dasturchiman</h1>
-                <p class="hero-text">Raqamli dunyoda kreativ yechimlar yarataman</p>
-                <div class="btn-group">
-                    <a href="#contact" class="btn btn-primary">Bog'lanish</a>
-                    <a href="#" class="btn btn-secondary">CV yuklab olish</a>
+
+                <!-- Right Side -->
+                <div class="hero-right">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image">
+                            <img src="/api/placeholder/400/400" alt="Profile Photo">
+                        </div>
+                        <div class="experience-badge">
+                            <span class="years">2+</span>
+                            <span class="text">Yillik tajriba</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Background Elements -->
+        <div class="hero-bg-elements">
+            <div class="bg-element element-1"></div>
+            <div class="bg-element element-2"></div>
+            <div class="bg-element element-3"></div>
         </div>
     </section>
 
@@ -55,29 +138,102 @@
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">Men haqimda</h2>
+
             <div class="about-content">
-                <div class="about-img slide-in-left">
-                    <img src="/api/placeholder/400/400" alt="About me">
+                <!-- Left Side -->
+                <div class="about-left">
+                    <div class="profile-image-container">
+                        <!-- Glowing Effect -->
+                        <div class="profile-glow"></div>
+                        
+                        <!-- Animated Border -->
+                        <div class="profile-border"></div>
+                        
+                        <!-- Main Image -->
+                        <div class="profile-image">
+                            <img src="./photo_2024-12-13_11-31-49.jpg" alt="Profile Photo">
+                            <!-- Blue Light Effect -->
+                            <div class="profile-light"></div>
+                        </div>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="profile-role">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h3>Frontend Developer</h3>
+                                <p>2+ yillik tajriba</p>
+                            </div>
+                        </div>
+                        <div class="profile-projects">
+                            <i class="fas fa-laptop-code"></i>
+                            <div>
+                                <h3>Web Designer</h3>
+                                <p>50+ loyihalar</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-text slide-in-right">
-                    <p>Men frontend dasturchi sifatida zamonaviy web ilovalar yaratish bilan shug'ullanaman. Har bir loyihaga individual yondashuv va kreativ yechimlar taklif qilaman.</p>
-                    <div class="info-list">
-                        <div class="info-item glass-effect">
-                            <span class="info-label">Ism:</span>
-                            <span class="info-value">Web Developer</span>
+
+                <!-- Right Side -->
+                <div class="about-right">
+                    <div class="about-description">
+                        <p>Men frontend dasturchi sifatida zamonaviy web ilovalar yaratish bilan shug'ullanaman. Har bir
+                            loyihaga individual yondashuv va kreativ yechimlar taklif qilaman.</p>
+                    </div>
+
+                    <!-- Skills Tags -->
+                    <div class="skills-container">
+                        <div class="skill-tag"><i class="fab fa-html5"></i>HTML5</div>
+                        <div class="skill-tag"><i class="fab fa-css3-alt"></i>CSS3</div>
+                        <div class="skill-tag"><i class="fab fa-js"></i>JavaScript</div>
+                        <div class="skill-tag"><i class="fab fa-react"></i>React</div>
+                        <div class="skill-tag"><i class="fas fa-code"></i>TypeScript</div>
+                        <div class="skill-tag"><i class="fab fa-node-js"></i>Node.js</div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div class="info-content">
+                                <span class="info-label">Ism:</span>
+                                <span class="info-value">Web Developer</span>
+                            </div>
                         </div>
-                        <div class="info-item glass-effect">
-                            <span class="info-label">Email:</span>
-                            <span class="info-value">example@gmail.com</span>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info-content">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">example@gmail.com</span>
+                            </div>
                         </div>
-                        <div class="info-item glass-effect">
-                            <span class="info-label">Manzil:</span>
-                            <span class="info-value">Toshkent, O'zbekiston</span>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-content">
+                                <span class="info-label">Manzil:</span>
+                                <span class="info-value">Toshkent, O'zbekiston</span>
+                            </div>
                         </div>
-                        <div class="info-item glass-effect">
-                            <span class="info-label">Freelance:</span>
-                            <span class="info-value">Mavjud</span>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div class="info-content">
+                                <span class="info-label">Freelance:</span>
+                                <span class="info-value highlight">Mavjud</span>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Bog'lanish
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Resume yuklab olish
+                        </a>
                     </div>
                 </div>
             </div>
@@ -85,216 +241,536 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="container">
+<section class="skills" id="skills">
+    <div class="container">
+        <div class="section-title-wrapper">
             <h2 class="section-title">Ko'nikmalar</h2>
-            <div class="skills-container">
-                <div class="skill-card glass-effect fade-in">
-                    <h3 class="skill-title">Frontend Development</h3>
-                    <div class="skill-item">
+            <p class="section-subtitle">Mening texnik bilimlarim</p>
+        </div>
+        
+        <div class="skills-container">
+            <!-- Frontend Development -->
+            <div class="skill-category" data-aos="fade-up">
+                <div class="skill-category-header">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="skill-category-content">
+                        <h3 class="skill-category-title">Frontend Development</h3>
+                        <p class="skill-category-description">Zamonaviy web interfeyslarni yaratish</p>
+                    </div>
+                </div>
+
+                <div class="skill-list">
+                    <!-- HTML/CSS -->
+                    <div class="skill-item" data-skill="HTML/CSS" data-progress="95">
                         <div class="skill-info">
-                            <h4 class="skill-name">HTML5</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="90"></div>
+                            <div class="skill-title">
+                                <h4>HTML5/CSS3</h4>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-tooltip">
+                                <h5>Asosiy ko'nikmalar:</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Semantik HTML</li>
+                                    <li><i class="fas fa-check"></i> CSS Grid/Flexbox</li>
+                                    <li><i class="fas fa-check"></i> SASS/SCSS</li>
+                                    <li><i class="fas fa-check"></i> Responsive Design</li>
+                                    <li><i class="fas fa-check"></i> CSS Animations</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item">
+
+                    <!-- JavaScript -->
+                    <div class="skill-item" data-skill="JavaScript" data-progress="90">
                         <div class="skill-info">
-                            <h4 class="skill-name">CSS3/SASS</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="85"></div>
+                            <div class="skill-title">
+                                <h4>JavaScript</h4>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-tooltip">
+                                <h5>Asosiy ko'nikmalar:</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> ES6+ Features</li>
+                                    <li><i class="fas fa-check"></i> DOM Manipulation</li>
+                                    <li><i class="fas fa-check"></i> Async/Await</li>
+                                    <li><i class="fas fa-check"></i> REST APIs</li>
+                                    <li><i class="fas fa-check"></i> TypeScript</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item">
+
+                    <!-- React -->
+                    <div class="skill-item" data-skill="React" data-progress="85">
                         <div class="skill-info">
-                            <h4 class="skill-name">JavaScript</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="80"></div>
+                            <div class="skill-title">
+                                <h4>React</h4>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <h4 class="skill-name">React</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="75"></div>
+                        <div class="skill-details">
+                            <div class="skill-tooltip">
+                                <h5>Asosiy ko'nikmalar:</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> React Hooks</li>
+                                    <li><i class="fas fa-check"></i> Redux Toolkit</li>
+                                    <li><i class="fas fa-check"></i> Next.js</li>
+                                    <li><i class="fas fa-check"></i> React Router</li>
+                                    <li><i class="fas fa-check"></i> React Testing</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="skill-card glass-effect fade-in">
-                    <h3 class="skill-title">Backend Development</h3>
-                    <div class="skill-item">
+            <!-- Backend Development -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-category-header">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="skill-category-content">
+                        <h3 class="skill-category-title">Backend Development</h3>
+                        <p class="skill-category-description">Server tomonlama dasturlash</p>
+                    </div>
+                </div>
+
+                <div class="skill-list">
+                    <!-- Node.js -->
+                    <div class="skill-item" data-skill="Node.js" data-progress="80">
                         <div class="skill-info">
-                            <h4 class="skill-name">Node.js</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="70"></div>
+                            <div class="skill-title">
+                                <h4>Node.js</h4>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-tooltip">
+                                <h5>Asosiy ko'nikmalar:</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Express.js</li>
+                                    <li><i class="fas fa-check"></i> REST APIs</li>
+                                    <li><i class="fas fa-check"></i> JWT Auth</li>
+                                    <li><i class="fas fa-check"></i> WebSocket</li>
+                                    <li><i class="fas fa-check"></i> Node Security</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item">
+
+                    <!-- Database -->
+                    <div class="skill-item" data-skill="Database" data-progress="75">
                         <div class="skill-info">
-                            <h4 class="skill-name">MongoDB</h4>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="65"></div>
+                            <div class="skill-title">
+                                <h4>Database</h4>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-tooltip">
+                                <h5>Asosiy ko'nikmalar:</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> MongoDB</li>
+                                    <li><i class="fas fa-check"></i> MySQL</li>
+                                    <li><i class="fas fa-check"></i> Redis</li>
+                                    <li><i class="fas fa-check"></i> Mongoose</li>
+                                    <li><i class="fas fa-check"></i> SQL Queries</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Development Tools -->
+                    <div class="skill-item" data-skill="DevTools" data-progress="85">
+                        <div class="skill-info">
+                            <div class="skill-title">
+                                <h4>Development Tools</h4>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-tooltip">
+                                <h5>Asosiy ko'nikmalar:</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Git & GitHub</li>
+                                    <li><i class="fas fa-check"></i> Webpack</li>
+                                    <li><i class="fas fa-check"></i> Docker</li>
+                                    <li><i class="fas fa-check"></i> VS Code</li>
+                                    <li><i class="fas fa-check"></i> Terminal</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">Loyihalarim</h2>
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">Hammasi</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="app">App</button>
-                <button class="filter-btn" data-filter="design">Dizayn</button>
-            </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card glass-effect" data-category="web">
-                    <div class="project-img">
-                        <img src="/api/placeholder/400/300" alt="Project 1">
-                        <div class="project-content">
-                            <h3 class="project-title">E-commerce Loyihasi</h3>
-                            <p class="project-category">Web Development</p>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-primary btn-sm">Ko'rish</a>
-                                <a href="#" class="btn btn-secondary btn-sm">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card glass-effect" data-category="app">
-                    <div class="project-img">
-                        <img src="/api/placeholder/400/300" alt="Project 2">
-                        <div class="project-content">
-                            <h3 class="project-title">Mobile App</h3>
-                            <p class="project-category">App Development</p>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-primary btn-sm">Ko'rish</a>
-                                <a href="#" class="btn btn-secondary btn-sm">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card glass-effect" data-category="design">
-                    <div class="project-img">
-                        <img src="/api/placeholder/400/300" alt="Project 3">
-                        <div class="project-content">
-                            <h3 class="project-title">UI/UX Dizayn</h3>
-                            <p class="project-category">Web Design</p>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-primary btn-sm">Ko'rish</a>
-                                <a href="#" class="btn btn-secondary btn-sm">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="projects" id="projects">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Mening oxirgi ishlarim</h2>
+            <p class="section-subtitle">Portfolio loyihalarim</p>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
+        <!-- Project Filters -->
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-th-large"></i>
+                <span>Hammasi</span>
+            </button>
+            <button class="filter-btn" data-filter="web">
+                <i class="fas fa-globe"></i>
+                <span>Web Loyihalar</span>
+            </button>
+            <button class="filter-btn" data-filter="app">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Ilovalar</span>
+            </button>
+            <button class="filter-btn" data-filter="design">
+                <i class="fas fa-pencil-ruler"></i>
+                <span>UI/UX Dizayn</span>
+            </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            <!-- Project Card -->
+            <article class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="/api/placeholder/400/300" alt="E-commerce Project" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">
+                        Online savdo platformasi. To'liq funksional e-commerce website 
+                        barcha zamonaviy xususiyatlar bilan.
+                    </p>
+                    
+                    <!-- Project Features -->
+                    <ul class="project-features">
+                        <li>
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Online to'lov tizimi</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-user-circle"></i>
+                            <span>Shaxsiy kabinet</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Admin panel</span>
+                        </li>
+                    </ul>
+
+                    <!-- Project Links -->
+                    <div class="project-links">
+                        <a href="#" class="btn-link btn-demo" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Demo</span>
+                        </a>
+                        <a href="#" class="btn-link btn-github" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- More Project Cards... -->
+        </div>
+
+        <!-- Load More -->
+        <div class="load-more">
+            <button class="btn-load-more">
+                <i class="fas fa-spinner"></i>
+                <span>Ko'proq ko'rish</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
             <h2 class="section-title">Men bilan bog'laning</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card glass-effect">
-                        <div class="icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info">
-                            <h3 class="title">Manzil</h3>
-                            <p>Toshkent, O'zbekiston</p>
-                        </div>
+            <p class="section-subtitle">Loyihangiz haqida gaplashaylik</p>
+        </div>
+
+        <div class="contact-content">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <!-- Location Card -->
+                <div class="contact-card" data-aos="fade-right">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <div class="contact-card glass-effect">
-                        <div class="icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info">
-                            <h3 class="title">Email</h3>
-                            <p>example@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-card glass-effect">
-                        <div class="icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="info">
-                            <h3 class="title">Telefon</h3>
-                            <p>+998 90 123 45 67</p>
-                        </div>
+                    <div class="card-content">
+                        <h3>Manzil</h3>
+                        <p>Tashkent, Uzbekistan</p>
                     </div>
                 </div>
-                <form class="contact-form glass-effect">
-                    <div class="input-wrapper">
-                        <label class="input-label" for="name">Ismingiz</label>
-                        <input type="text" class="input-field" id="name" required>
-                    </div>
-                    <div class="input-wrapper">
-                        <label class="input-label" for="email">Email</label>
-                        <input type="email" class="input-field" id="email" required>
-                    </div>
-                    <div class="input-wrapper">
-                        <label class="input-label" for="message">Xabar</label>
-                        <textarea class="input-field" id="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        Yuborish
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="copyright">&copy; 2024 All rights reserved</p>
-                <div class="footer-social-links">
-                    <a href="#" class="footer-social-link">
+                <!-- Email Card -->
+                <div class="contact-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Email</h3>
+                        <p>example@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-card" data-aos="fade-right" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Telefon</h3>
+                        <p>+998 90 123 45 67</p>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links" data-aos="fade-up">
+                    <h3>Ijtimoiy tarmoqlar</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" data-aos="fade-left">
+                <div class="form-header">
+                    <h3>Xabar yuborish</h3>
+                    <p>Loyihangiz bo'yicha savol va takliflar bo'lsa yozing</p>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Ismingiz</label>
+                        <span class="input-icon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                        <span class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Mavzu</label>
+                        <span class="input-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Xabaringiz</label>
+                        <span class="input-icon">
+                            <i class="fas fa-comment-alt"></i>
+                        </span>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Yuborish</span>
+                    <span class="btn-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Xabar yuborildi!</h3>
+            <p>Tez orada siz bilan bog'lanamiz</p>
+            <button class="modal-close">OK</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- Logo & Info -->
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="/api/placeholder/40/40" alt="Logo">
+                    <span>Portfolio</span>
+                </div>
+                <p class="footer-description">
+                    Professional web dasturchi. Frontend va backend development xizmatlari.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="footer-social-link">
+                    <a href="#" class="social-link" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="#" class="footer-social-link">
+                    <a href="#" class="social-link" title="Telegram">
                         <i class="fab fa-telegram"></i>
                     </a>
-                    <a href="#" class="footer-social-link">
+                    <a href="#" class="social-link" title="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h3>Tezkor Havolalar</h3>
+                <ul>
+                    <li><a href="#about">Men haqimda</a></li>
+                    <li><a href="#skills">Ko'nikmalar</a></li>
+                    <li><a href="#projects">Loyihalar</a></li>
+                    <li><a href="#contact">Bog'lanish</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-services">
+                <h3>Xizmatlar</h3>
+                <ul>
+                    <li>Web Sayt Yaratish</li>
+                    <li>UI/UX Dizayn</li>
+                    <li>Mobile Ilovalar</li>
+                    <li>Backend Development</li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h3>Kontakt</h3>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Tashkent, Uzbekistan</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>example@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+998 90 123 45 67</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2024 Barcha huquqlar himoyalangan</p>
+            </div>
+            <div class="footer-links-bottom">
+                <a href="#">Maxfiylik siyosati</a>
+                <a href="#">Foydalanish shartlari</a>
+            </div>
+            <!-- Scroll to top button -->
+            <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </div>
+</footer>
 
     <!-- Scroll to Top Button -->
     <button class="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-btn" aria-label="Toggle theme">
-        <i class="fas fa-moon"></i>
-    </button>
-
     <script src="script.js"></script>
 </body>
+
 </html>
